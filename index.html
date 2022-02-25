@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    //Ejercicios JS // EJERCICIO 1 /* var numero1 = 5; var numero2 = 8; if(numero1
+    <=n umero2) { alert( "numero1 no es mayor que numero2"); } if(numero2>= 0) { alert("numero2 es positivo"); } if(numero1
+        < 0 || numero1 !=0 ) { alert( "numero1 es negativo o distinto de cero"); } if(++numero1 < numero2) { alert( "Incrementar en 1 unidad el valor de numero1 no lo hace mayor o igual que numero2"); } */
+        // EJERCICIO 2 /* var numero=p rompt( "Introduce un número y se mostrará su factorial"); var resultado=1 ; for(var i=1; i<=numero; i++) { resultado *=i ; } alert(resultado); */ // EJERCICIO 3 /* var numero=p rompt( "Introduce un número entero");
+            var resultado=p arImpar(numero); alert( "El número "+numero+ " es "+resultado); function parImpar(numero) { if(numero % 2==0 ) { return "par"; } else { return "impar"; } } */ // EJERCICIO 04 /* var frase=p rompt( "Ingrese la frase o palabra: ");
+            function palindromo(fra) { // Convierto la cadena a minúscula var minuscula=f ra.toLowerCase(); alert(minuscula); // Convierto la cadena en un array var convertirArray=m inuscula.split( ""); alert(convertirArray); // Elimino los espacios del array
+            var sinEspacios="" ; for (i in convertirArray) { if (convertirArray[i] !=" " ) { sinEspacios +=c onvertirArray[i]; } } alert(sinEspacios); // Vuelvo a convertir en array var nuevoArray=s inEspacios.split( ""); var alReves=n uevoArray.reverse();
+            alert(alReves); // Verifico sin son iguales flag=t rue; for (i in nuevoArray) { if (nuevoArray[i] !=a lReves[i]) { flag=f alse; break; }; }; if (flag) { return ( "La cadena es un palíndromo."); } else { return (
+            "La cadena NO es un palíndromo."); } }; alert(palindromo(frase)); */ </body>
+
+</html>
