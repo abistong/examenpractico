@@ -70,12 +70,13 @@ function palindromo(fra) {
     alert(sinEspacios);
     // Vuelvo a convertir en array
     var nuevoArray = sinEspacios.split("");
+    let tempOrigi = sinEspacios.split("");
     var alReves = nuevoArray.reverse();
     alert(alReves);
     // Verifico sin son iguales
     flag = true;
-    for (i in nuevoArray) {
-        if (nuevoArray[i] != alReves[i]) {
+    for (i in tempOrigi) {
+        if (tempOrigi[i] != alReves[i]) {
             flag = false;
             break;
         };
